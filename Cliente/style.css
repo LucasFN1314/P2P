@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    margin: 1em;
+}
+
+#Host {
+    margin-bottom: 1em;
+}
+
+
+
+#chat-input-container {
+    margin-top: 1em;
+}
+
+textarea {
+
+    resize: none;
+    margin-top: 1em;
+    /*remove the resize handle on the bottom right*/
+}
+
+.notification-container { 
+    width: 100%;
+    height: 2em;
+
+    margin: .5em 0;
+    position: relative;
+}
+
+.notification-zone {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+
+    min-height: 100%;
+
+    z-index: 100;
+
+    word-break: break-all;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: .3em;
+}
+
+.notification-zone>p {
+    margin: 0;
+    height: 100%;
+}
+
+.green-notif {
+    background-color: green;
+    color:  white;
+    animation: green-notif;
+    animation-duration: 6s;
+    opacity: 0%;
+
+    
+}
+
+@keyframes green-notif {
+    0% {
+        opacity: 0%;
+    }
+    
+    50% {
+        opacity: 100%;
+    }
+    
+    100% {
+        opacity: 0%;
+    }
+}
