@@ -31,6 +31,7 @@ textarea {
     resize: none;
     margin-top: 1em;
     /*remove the resize handle on the bottom right*/
+    
 }
 
 .notification-container { 
@@ -88,6 +89,10 @@ textarea {
         opacity: 100%;
     }
     
+    90% {
+        opacity: 100%;
+    }
+
     100% {
         opacity: 0%;
     }
